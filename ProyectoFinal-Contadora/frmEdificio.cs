@@ -18,7 +18,7 @@ namespace ProyectoFinal_Contadora
         }
 
         //REVISAR: NO ES DEL TODO CORRECTO
-        private void btnRegresar_Click(object sender, EventArgs e)
+        private void btnSalirEdificio_Click(object sender, EventArgs e)
         {
             this.Hide();
             frmMenu frmMenu1 = new frmMenu();
