@@ -35,45 +35,51 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.linklblContrasena = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(57, 42);
+            this.lblUsuario.Location = new System.Drawing.Point(86, 65);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(46, 13);
+            this.lblUsuario.Size = new System.Drawing.Size(68, 20);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario:";
             // 
             // lblContrasena
             // 
             this.lblContrasena.AutoSize = true;
-            this.lblContrasena.Location = new System.Drawing.Point(39, 78);
+            this.lblContrasena.Location = new System.Drawing.Point(58, 120);
+            this.lblContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContrasena.Name = "lblContrasena";
-            this.lblContrasena.Size = new System.Drawing.Size(64, 13);
+            this.lblContrasena.Size = new System.Drawing.Size(96, 20);
             this.lblContrasena.TabIndex = 1;
             this.lblContrasena.Text = "Contrasena:";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(108, 42);
+            this.txtUsuario.Location = new System.Drawing.Point(162, 65);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(177, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(264, 26);
             this.txtUsuario.TabIndex = 0;
             // 
             // txtContrasena
             // 
-            this.txtContrasena.Location = new System.Drawing.Point(108, 75);
+            this.txtContrasena.Location = new System.Drawing.Point(128, 155);
+            this.txtContrasena.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtContrasena.Name = "txtContrasena";
-            this.txtContrasena.Size = new System.Drawing.Size(177, 20);
+            this.txtContrasena.Size = new System.Drawing.Size(264, 26);
             this.txtContrasena.TabIndex = 1;
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(85, 150);
+            this.btnIngresar.Location = new System.Drawing.Point(128, 231);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.Size = new System.Drawing.Size(112, 35);
             this.btnIngresar.TabIndex = 2;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -81,9 +87,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(183, 150);
+            this.btnCancelar.Location = new System.Drawing.Point(274, 231);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(112, 35);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -92,20 +99,33 @@
             // linklblContrasena
             // 
             this.linklblContrasena.AutoSize = true;
-            this.linklblContrasena.Location = new System.Drawing.Point(105, 203);
+            this.linklblContrasena.Location = new System.Drawing.Point(158, 312);
+            this.linklblContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linklblContrasena.Name = "linklblContrasena";
-            this.linklblContrasena.Size = new System.Drawing.Size(131, 13);
+            this.linklblContrasena.Size = new System.Drawing.Size(194, 20);
             this.linklblContrasena.TabIndex = 4;
             this.linklblContrasena.TabStop = true;
             this.linklblContrasena.Text = "¿Olvidaste tu contrasena?";
             this.linklblContrasena.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblContrasena_LinkClicked);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(42, 276);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Cancelar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 254);
+            this.ClientSize = new System.Drawing.Size(510, 365);
             this.ControlBox = false;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.linklblContrasena);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
@@ -113,10 +133,11 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContrasena);
             this.Controls.Add(this.lblUsuario);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(362, 293);
+            this.MaximumSize = new System.Drawing.Size(532, 421);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(362, 293);
+            this.MinimumSize = new System.Drawing.Size(532, 421);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -134,6 +155,7 @@
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.LinkLabel linklblContrasena;
+        private System.Windows.Forms.Button button1;
     }
 }
 

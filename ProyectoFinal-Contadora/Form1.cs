@@ -50,5 +50,10 @@ namespace ProyectoFinal_Contadora
         {
             MessageBox.Show("Intente en 2 minutos", "Link Invalido");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ipracticando github");
+        }
     }
 }
