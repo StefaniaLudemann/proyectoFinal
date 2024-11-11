@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaDominio
+namespace Capa2
 {
-    internal class Rol
+    public class Class1
     {
     }
 }
